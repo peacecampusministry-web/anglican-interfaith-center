@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap");
+
+:root {
+  color-scheme: light;
+  --ink: #202b2a;
+  --muted: #455653;
+  --paper: #faf7ee;
+  --white: #fffdf7;
+  --green: #173d35;
+  --gold: #f2d99e;
+  --line: #d2dbcd;
+  font: 100%/1.6 "DM Sans", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); }
+a { color: inherit; }
+a:focus-visible { outline: 3px solid currentColor; outline-offset: 5px; }
+.wrap { width: min(100% - 2.5rem, 68rem); margin-inline: auto; }
+.skip { position: absolute; z-index: 1; top: 1rem; left: 1rem; background: var(--white); padding: .5rem 1rem; transform: translateY(-200%); }
+.skip:focus { transform: none; }
+.site-header { background: var(--white); }
+.header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .75rem 2rem; padding-block: 1rem; }
+.brand { font-weight: 700; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem 1.35rem; }
+nav a { font-size: .95rem; text-decoration-thickness: 1px; text-underline-offset: .25em; }
+.hero { background: radial-gradient(ellipse at top right, #376458, transparent 65%), var(--green); color: var(--white); padding-block: clamp(4rem, 11vw, 8rem); }
+h1, h2, h3 { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; line-height: 1; margin: 0; }
+h1 { font-size: clamp(3.25rem, 10vw, 7.5rem); }
+.hero p { max-width: 34rem; font-size: clamp(1.1rem, 2.5vw, 1.45rem); margin-block: 1.5rem 2rem; }
+.button { display: inline-block; background: var(--gold); color: var(--green); padding: .65rem 1.25rem; font-weight: 700; text-decoration: none; }
+.button:hover { background: var(--white); }
+.button:focus-visible { outline-color: var(--white); }
+.section { padding-block: clamp(2.75rem, 7vw, 5rem); }
+h2 { font-size: clamp(2.5rem, 6vw, 4rem); }
+h3 { font-size: 2rem; }
+.section p { color: var(--muted); max-width: 42rem; margin-block: 1rem 0; }
+.dialogue { background: #e9eee4; }
+.topics { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1.5rem; margin-top: 2rem; }
+.topics article { border-top: 1px solid #82998d; padding-top: 1.25rem; }
+.site-footer { border-top: 1px solid var(--line); padding-block: 1.25rem; font-weight: 600; }
+
+.gallery-title { font-size: clamp(3rem, 7vw, 5.5rem); }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: 1.25rem; list-style: none; margin: 2rem 0 0; padding: 0; }
+.gallery img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #ece6d7; }
