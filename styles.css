@@ -124,3 +124,32 @@ h3 { font-size: 2rem; }
 @media (min-width:48rem) {
   .event-featured { grid-template-columns:minmax(0, 1.25fr) minmax(0, 1fr); gap:clamp(1.25rem,4vw,3rem); }
 }
+
+.hero { padding-block: clamp(2.75rem, 7vw, 6rem); }
+.hero-layout { display: grid; gap: clamp(1.75rem, 4vw, 3.5rem); align-items: center; }
+.hero-copy h1 { font-size: clamp(3rem, 7vw, 5.75rem); }
+.hero-photo { margin: 0; border: 1px solid #9bab99; border-radius: .55rem; overflow: hidden; box-shadow: 0 1rem 2.5rem #0a241d55; }
+.hero-photo img { display: block; width: 100%; height: auto; }
+@media (min-width: 52rem) {
+  .hero-layout { grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); }
+  .hero-copy h1 { font-size: clamp(3.25rem, 6vw, 5.5rem); }
+}
+
+.hero { background:radial-gradient(ellipse at 88% 10%,#41695b 0%,transparent 60%),#153a32; padding-block:clamp(2.5rem,6vw,5.5rem); }
+.hero-layout { gap:clamp(1.5rem,6vw,5rem); }
+.hero-copy h1 { line-height:.96; }
+.hero-copy p { color:#ecf1e9; }
+.hero-actions { display:flex; flex-wrap:wrap; align-items:center; gap:1rem 1.5rem; }
+.hero-actions a:last-child { text-underline-offset:.28em; }
+.hero-photo { border:1px solid #e3ce96; padding:.4rem; background:#f2d99e; border-radius:.9rem; }
+.hero-photo img { border-radius:.6rem; }
+.event-featured { padding:0; gap:0; overflow:hidden; background:#fffdf7; box-shadow:0 1rem 2.5rem #173d3512; }
+.event-featured .event-copy { padding:clamp(1.4rem,4vw,3rem); }
+.event-featured .event-photo { border-radius:0; align-self:stretch; display:flex; flex-direction:column; }
+.event-featured .event-photo img { flex:1; min-height:0; object-fit:cover; object-position:center 44%; }
+.event-featured .event-photo figcaption { background:#173d35; color:#fffdf7; padding:.7rem 1rem; }
+.event-date-line { display:flex; align-items:center; gap:.8rem; margin-bottom:1.1rem; }
+.event-date-line .event-date { margin:0; }
+.event-date-tile { display:grid; justify-items:center; line-height:1; min-width:3.4rem; gap:.3rem; padding:.6rem .5rem; background:#173d35; color:#fffdf7; border-radius:.4rem; }
+.event-date-tile span { font-size:.68rem; letter-spacing:.12em; }
+.event-date-tile strong { font-size:1.5rem; }
