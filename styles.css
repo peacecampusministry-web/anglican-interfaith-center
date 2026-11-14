@@ -114,3 +114,13 @@ h3 { font-size: 2rem; }
 .director-message { background:var(--white); border:1px solid var(--line); padding:clamp(1.25rem,4vw,2.5rem); border-radius:.65rem; }
 .director-signature { font-weight:700; }
 .event-calendar-link { display:inline-block; margin:.65rem; }
+
+.event-with-photo { display:grid; gap:1.15rem; }
+.event-with-photo .event-copy { min-width:0; }
+.event-featured { align-items:center; }
+.event-photo { min-width:0; margin:0; overflow:hidden; border-radius:.45rem; background:#e9eee4; }
+.event-photo img { display:block; width:100%; aspect-ratio:3 / 2; object-fit:contain; background:#e9eee4; }
+.event-photo figcaption { padding:.45rem .75rem; font-size:.8rem; color:var(--muted); }
+@media (min-width:48rem) {
+  .event-featured { grid-template-columns:minmax(0, 1.25fr) minmax(0, 1fr); gap:clamp(1.25rem,4vw,3rem); }
+}
