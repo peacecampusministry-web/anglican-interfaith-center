@@ -66,3 +66,9 @@ h3 { font-size: 2rem; }
 .reading .byline { border-bottom: 1px solid var(--line); padding-bottom: 1.2rem; }
 .reading [lang="ur"] { border-top: 1px solid var(--line); margin-top: 2rem; font-family: "Noto Nastaliq Urdu", "Noto Naskh Arabic", "Segoe UI", serif; font-size: 1.2rem; line-height: 2; }
 .reading [lang="ur"] h2 { font-family: inherit; }
+
+#resources, #photos { scroll-margin-top: 1rem; }
+.slideshow .slide-frame { max-height: min(50vh, 33rem); }
+.reading .article-intro { font-size: 1.22rem; line-height: 1.6; color: var(--ink); }
+.resource-card h2 { line-height: 1.1; }
+.resource-entry a { text-underline-offset: .18em; }
