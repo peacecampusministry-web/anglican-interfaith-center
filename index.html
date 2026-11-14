@@ -6,6 +6,7 @@
   <meta name="description" content="Anglican Interfaith Center is a place for people of different faiths to meet, listen, and learn from one another.">
   <title>Anglican Interfaith Center</title>
   <link rel="stylesheet" href="./styles.css">
+  <script src="./slideshow.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -16,10 +17,36 @@
         <a href="#about">About</a>
         <a href="#dialogue">Dialogue</a>
         <a href="#participate">Participate</a><a href="./gallery.html">Photos</a>
-      </nav>
+      <a href="./resources.html">Resources</a></nav>
     </div>
   </header>
   <main id="main">
+    <section class="slideshow" aria-label="Community photo slideshow">
+      <div class="wrap slideshow-inner">
+        <div class="slide-frame">
+          <img src="./photos/WhatsApp%20Image%202026-11-13%20at%208.32.36%20PM.jpeg" alt="Community gathering photo 1">
+          <img data-src="./photos/WhatsApp%20Image%202026-11-13%20at%208.42.29%20PM.jpeg" alt="Community gathering photo 2" hidden>
+          <img data-src="./photos/WhatsApp%20Image%202026-11-13%20at%208.43.48%20PM.jpeg" alt="Community gathering photo 3" hidden>
+          <img data-src="./photos/WhatsApp%20Image%202026-11-13%20at%208.54.29%20PM%20%281%29.jpeg" alt="Community gathering photo 4" hidden>
+          <img data-src="./photos/WhatsApp%20Image%202026-11-13%20at%208.54.29%20PM.jpeg" alt="Community gathering photo 5" hidden>
+          <img data-src="./photos/WhatsApp%20Image%202026-11-13%20at%208.54.29%20PM%20%282%29.jpeg" alt="Community gathering photo 6" hidden>
+          <img data-src="./photos/WhatsApp%20Image%202026-11-13%20at%208.54.29%20PM%20%283%29.jpeg" alt="Community gathering photo 7" hidden>
+          <img data-src="./photos/WhatsApp%20Image%202026-11-13%20at%208.56.56%20PM.jpeg" alt="Community gathering photo 8" hidden>
+          <img data-src="./photos/WhatsApp%20Image%202026-11-13%20at%208.56.56%20PM%20%281%29.jpeg" alt="Community gathering photo 9" hidden>
+          <img data-src="./photos/WhatsApp%20Image%202026-11-13%20at%208.56.56%20PM%20%282%29.jpeg" alt="Community gathering photo 10" hidden>
+        </div>
+        <div class="slide-toolbar">
+          <a href="./gallery.html">View all photos</a>
+          <div class="slide-controls" hidden>
+            <button type="button" data-step="-1" aria-label="Previous photo">Previous</button>
+            <span class="slide-count">1 / 10</span>
+            <button type="button" data-step="1" aria-label="Next photo">Next</button>
+            <button type="button" class="slide-toggle">Pause</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="hero" aria-labelledby="page-title">
       <div class="wrap">
         <h1 id="page-title">Anglican<br>Interfaith Center</h1>
@@ -60,5 +87,6 @@
   </footer>
 </body>
 </html>
+
 
 

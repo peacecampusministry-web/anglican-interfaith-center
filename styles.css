@@ -42,3 +42,27 @@ h3 { font-size: 2rem; }
 .gallery-title { font-size: clamp(3rem, 7vw, 5.5rem); }
 .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: 1.25rem; list-style: none; margin: 2rem 0 0; padding: 0; }
 .gallery img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #ece6d7; }
+
+[hidden] { display: none !important; }
+.slideshow { background: #173d35; color: #fffdf7; padding-block: 1.25rem; }
+.slide-frame { aspect-ratio: 16 / 9; max-height: 65vh; background: #0d2621; overflow: hidden; border-radius: .5rem; }
+.slide-frame img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.slide-toolbar, .slide-controls { display: flex; align-items: center; flex-wrap: wrap; gap: .65rem; }
+.slide-toolbar { justify-content: space-between; margin-top: .75rem; }
+.slide-controls button { color: inherit; background: transparent; border: 1px solid #b9c9be; border-radius: .25rem; padding: .45rem .65rem; cursor: pointer; font: inherit; }
+.slide-controls button:hover { background: #376458; }
+.slide-count { min-width: 4ch; text-align: center; font-variant-numeric: tabular-nums; }
+
+.resource-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,24rem),1fr)); gap: 1.25rem; margin-top: 2rem; }
+.resource-card { background: var(--white); border: 1px solid var(--line); border-radius: .5rem; padding: clamp(1.25rem,4vw,2rem); }
+.resource-card h2 { font-size: clamp(2rem,5vw,2.9rem); color: var(--green); }
+.resource-entry { margin-top: 1.25rem; border-top: 1px solid var(--line); padding-top: 1.25rem; }
+.resource-entry h3 { font: 700 1.05rem/1.45 "DM Sans",system-ui,sans-serif; }
+.resource-entry p { margin-top: .4rem; }
+.reading { max-width: 49rem; }
+.reading h2 { font-size: clamp(2rem,5vw,2.9rem); margin-top: 2rem; }
+.reading li + li { margin-top: .5rem; }
+.reading .back-link { margin: 0 0 1rem; }
+.reading .byline { border-bottom: 1px solid var(--line); padding-bottom: 1.2rem; }
+.reading [lang="ur"] { border-top: 1px solid var(--line); margin-top: 2rem; font-family: "Noto Nastaliq Urdu", "Noto Naskh Arabic", "Segoe UI", serif; font-size: 1.2rem; line-height: 2; }
+.reading [lang="ur"] h2 { font-family: inherit; }
