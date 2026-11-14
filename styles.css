@@ -72,3 +72,25 @@ h3 { font-size: 2rem; }
 .reading .article-intro { font-size: 1.22rem; line-height: 1.6; color: var(--ink); }
 .resource-card h2 { line-height: 1.1; }
 .resource-entry a { text-underline-offset: .18em; }
+
+.feature-photo { margin: 0; background: #e9eee4; border-radius: .45rem; overflow: hidden; }
+.feature-photo img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.feature-photo figcaption { padding: .55rem .8rem; font-size: .8rem; color: var(--muted); background: var(--white); }
+.resource-card.resource-visual { padding: 0; overflow: hidden; }
+.resource-card > .feature-photo { border-radius: 0; }
+.resource-card .feature-photo img { aspect-ratio: 2 / 1; }
+.resource-card-body { position: relative; padding: 1.2rem clamp(1rem, 3vw, 1.75rem) 1.75rem; }
+.resource-card-body > h2 { font-size: clamp(1.85rem, 4vw, 2.6rem); }
+.section-visual { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,23rem),1fr)); gap: clamp(1.25rem,5vw,3rem); align-items: center; }
+.dialogue .section-visual { width: min(100% - 2.5rem, 68rem); margin-inline: auto; padding-block: clamp(2.75rem,7vw,5rem); }
+.dialogue .section-visual .wrap.section { width: auto; margin: 0; padding: 0; }
+.dialogue .topics { grid-template-columns: 1fr; gap: .85rem; }
+.article-photo { margin-block: 1.5rem 2rem; }
+.motif { display: inline-flex; width: 2.75rem; height: 2.75rem; align-items: center; justify-content: center; gap: .15rem; margin-bottom: .8rem; border-radius: 50%; background: #f2d99e; color: #173d35; }
+.motif i { display: block; width: .45rem; height: .45rem; background: currentColor; border-radius: 50%; }
+.motif-reports i { height: .95rem; width: .25rem; border-radius: .1rem; }
+.motif-reports i:nth-child(2) { height: 1.25rem; }
+.motif-faith i { width: .57rem; height: .57rem; transform: rotate(45deg); border-radius: .1rem; }
+.motif-faith i:nth-child(2) { background: transparent; border: 1px solid currentColor; }
+.motif-reflect i { width: .45rem; height: .75rem; border-radius: 70% 15%; transform: rotate(25deg); }
+.motif-reflect i:nth-child(2) { transform: translateY(-.2rem) rotate(25deg); }
