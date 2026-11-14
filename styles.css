@@ -94,3 +94,23 @@ h3 { font-size: 2rem; }
 .motif-faith i:nth-child(2) { background: transparent; border: 1px solid currentColor; }
 .motif-reflect i { width: .45rem; height: .75rem; border-radius: 70% 15%; transform: rotate(25deg); }
 .motif-reflect i:nth-child(2) { transform: translateY(-.2rem) rotate(25deg); }
+
+.calendar-layout { display:grid; grid-template-columns:minmax(0, 1.4fr) minmax(0, 1fr); align-items:start; gap:1.5rem; margin-top:2rem; }
+.calendar-panel,.event-card { padding:clamp(1rem,3vw,2rem); border-radius:.65rem; border:1px solid var(--line); background:var(--white); }
+.calendar-header { display:flex; align-items:center; justify-content:space-between; gap:.65rem; }
+.calendar-header h2,.event-card h2 { font-size:clamp(1.75rem,4vw,2.8rem); margin:0; }
+#month-controls button { font:inherit; font-size:1.45rem; padding:0 .6rem; border:1px solid var(--line); border-radius:.3rem; background:var(--paper); cursor:pointer; }
+#calendar-grid { width:100%; table-layout:fixed; border-collapse:collapse; margin-top:1rem; text-align:center; }
+#calendar-grid th { font-size:.8rem; color:var(--muted); }
+#calendar-grid td { border-bottom:1px solid var(--line); height:2.65rem; }
+.calendar-event-day { display:inline-flex; min-width:2rem; min-height:2rem; justify-content:center; align-items:center; border-radius:50%; background:var(--green); color:var(--white); font-weight:700; }
+.event-card:target { outline:2px solid var(--green); outline-offset:3px; }
+.event-card .event-date,.event-date { font-weight:700; color:var(--green); margin:0 0 .75rem; }
+.event-card .event-theme { font-weight:700; margin-top:.65rem; }
+.event-card .button { margin-top:1rem; }
+@media (max-width: 47rem) { .calendar-layout { grid-template-columns: 1fr; } }
+
+
+.director-message { background:var(--white); border:1px solid var(--line); padding:clamp(1.25rem,4vw,2.5rem); border-radius:.65rem; }
+.director-signature { font-weight:700; }
+.event-calendar-link { display:inline-block; margin:.65rem; }
